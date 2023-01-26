@@ -1,0 +1,313 @@
+body{
+  margin: 0;
+  background-image: url("../img/grid.png");
+  background-size:contain;
+  animation: scrollen 80s infinite;
+}
+
+@keyframes scrollen {
+  0%{
+    background-position: 0 -800px;
+  }
+  50%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 0 -800px;
+  }
+}
+
+header {
+  background: linear-gradient(to right, #4b1111, #9b5d08);
+  background-color: #4b1111;
+  width: 100%;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Urban Heroes';
+  src: url("../fonts/Urban\ Heroes.ttf") format("opentype");
+}
+
+h1{
+  font-family: 'Urban Heroes';
+  color: #fe4a49;
+  text-align: center;
+  font-size: 30px;
+  margin-right: 8px;
+  margin-top: 0;
+  text-shadow: 2px 2px 0 #000000;
+}
+
+h2, p, a {
+  font-family: 'Poppins';
+}
+
+a{
+  text-decoration: none;
+}
+
+header ul{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  list-style-type:none;
+  padding-right:1em;
+  padding-left: 1em;
+}
+
+header li{
+  text-align: right;
+}
+
+header input{
+  margin-top: 1.2em;
+  margin-left: 3.4em;
+  width: 100px;
+}
+
+header img{
+  margin-top: 0.3em;
+  width: 40px;
+}
+
+header .logo img{
+  margin-left: 0.5em;
+  width: 55px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp 
+   dit is waar ik het dropdown menu vandaan heb*/
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ad820b8a;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ad820b8a;}
+
+.home{
+  text-align: center;
+}
+.home img{
+  width: 300px;
+}
+
+main{
+  overflow-y: scroll;
+}
+
+main section img{
+  width: 300px;
+  margin-left: 9%;
+  margin-bottom: 0.7em;
+}
+
+main li{
+  list-style-type: none;
+}
+
+main nav{
+  position: relative;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: #ffc233;
+}
+
+main nav ul{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  list-style: none;
+  white-space: nowrap;
+  gap: 1em;
+}
+
+main li img{
+  width: 300px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+}
+
+main li:last-of-type{
+  margin-right: 2em;
+}
+
+main h2{
+  font-size: 22px;
+}
+
+main section.challenge p, main h2, .home section p{
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em;
+  background-color: white;
+}
+
+main section.challenge a p{
+  border: none;
+}
+
+main.post{
+  text-align: center;
+}
+
+main input{
+  text-align: center;
+  width: 90%;
+  height: 4em;
+  padding: 0;
+  margin-bottom: 1em;
+  border-style: solid;
+  border-color: #9b5d08;
+}
+
+main.post img{
+  width: 17em;
+}
+
+main.post p{
+font-size: 15px;
+margin:0.5em;
+background-color: white;
+}
+
+.post h2{
+  font-size: 30px;
+  padding: 0;
+}
+
+.post a p, .challenge a p{
+  text-align: left;
+  color: black;
+  width: 5em;
+}
+
+.posts img{
+  width: 200px;
+  height: auto;
+  padding: 0.5em;
+  background-color: #ffffff;
+}
+
+.info img{
+  margin: 0 0 0 1em;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: #4b1111;
+}
+
+.profiel p{
+  margin: 0.5em 0 0 1em;
+}
+
+.profiel h2{
+  padding: 0.2em;
+  margin: 0 0.5em 0 0.5em;
+  font-size: 20px;
+  border-style: solid;
+  border-color: #44bba4;
+}
+
+.info {
+  display: flex;
+}
+
+.previous h2{
+  margin: 1em 0 1em 0;
+  background-color: #44bba4;
+  border: none;
+  color: #ffffff;
+}
+
+.previous p{
+  text-align: center;
+}
+
+.mine img{
+  margin: 0;
+  width: 200px;
+}
+
+.mine p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.mine nav{
+  background: none;
+}
+
+main .upload, .home a p{
+  width: auto;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 2em;
+  margin: 1.5em;
+  padding: 0.5em;
+  background-color: #44bba4;
+  color: rgb(255, 255, 255);
+}
+
+.search section{
+  background-color: #44bba4;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.search img{
+  border-radius: 100%;
+  margin: 0.5em;
+  width: 100px;
+  height: auto;
+}
+
+.search .message{
+  border-radius: 0;
+  width: 65px;
+  height: auto;
+}
+
+.search p{
+  margin: 1em 0.5em;
+}
+
+.search section p{
+ color: white; 
+}
+
+footer{
+  text-align: center;
+}
