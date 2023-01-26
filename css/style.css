@@ -270,7 +270,7 @@ background-color: white;
   background: none;
 }
 
-main .upload, .home a p{
+main .upload, .home a p, .post .upload{
   width: auto;
   font-size: 20px;
   text-align: center;
